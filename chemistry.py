@@ -1,21 +1,5 @@
 def make_periodic_table:
-    periodic_table = [["Ac",	"Actinium",	227],["Ag",	"Silver",	107.8682],["Al",	"Aluminum",	26.9815386], ["Ar",	"Argon",	39.948], ["As",	"Arsenic",	74.9216], ["At",	"Astatine",	210], ["Au",	"Gold",	196.966569],["B",	"Boron",	10.811], ["Ba",	"Barium",	137.327], ["Be",	"Beryllium",	9.012182], ["Bi",	"Bismuth",	208.9804], ["Br",	"Bromine",	79.904], ["C",	"Carbon",	12.0107], ["Ca",	"Calcium",	40.078], ["Cd",	"Cadmium",	112.411], ["Ce",	"Cerium",	140.116], ["Cl",	"Chlorine",	35.453], ["Co",	"Cobalt",	58.933195], ["Cr",	"Chromium",	51.9961], ["Cs",	"Cesium",	132.9054519], ["Cu",	"Copper",	63.546], ["Dy",	"Dysprosium",	162.5], ["Er",	"Erbium",	167.259], ["Eu",	"Europium",	151.964
-                     "F",	"Fluorine",	18.9984032
-                     "Fe",	"Iron",	55.845
-                     "Fr",	"Francium",	223
-                     "Ga",	"Gallium",	69.723
-                     "Gd",	"Gadolinium",	157.25
-                     "Ge",	"Germanium",	72.64
-                     "H",	"Hydrogen",	1.00794
-                     "He",	"Helium",	4.002602
-                     "Hf",	"Hafnium",	178.49
-                     "Hg",	"Mercury",	200.59
-                     "Ho",	"Holmium",	164.93032
-                     "I",	"Iodine",	126.90447
-                     "In",	"Indium",	114.818
-                     "Ir",	"Iridium",	192.217
-                     "K",	"Potassium",	39.0983
-                     "Kr",	"Krypton",	83.798
+    periodic_table = [["Ac",	"Actinium",	227],["Ag",	"Silver",	107.8682],["Al",	"Aluminum",	26.9815386], ["Ar",	"Argon",	39.948], ["As",	"Arsenic",	74.9216], ["At",	"Astatine",	210], ["Au",	"Gold",	196.966569],["B",	"Boron",	10.811], ["Ba",	"Barium",	137.327], ["Be",	"Beryllium",	9.012182], ["Bi",	"Bismuth",	208.9804], ["Br",	"Bromine",	79.904], ["C",	"Carbon",	12.0107], ["Ca",	"Calcium",	40.078], ["Cd",	"Cadmium",	112.411], ["Ce",	"Cerium",	140.116], ["Cl",	"Chlorine",	35.453], ["Co",	"Cobalt",	58.933195], ["Cr",	"Chromium",	51.9961], ["Cs",	"Cesium",	132.9054519], ["Cu",	"Copper",	63.546], ["Dy",	"Dysprosium",	162.5], ["Er",	"Erbium",	167.259], ["Eu",	"Europium",	151.964],  ["F",	"Fluorine",	18.9984032] ["Fe",	"Iron",	55.845], ["Fr",	"Francium",	223], ["Ga",	"Gallium",	69.723], ["Gd",	"Gadolinium",	157.25], ["Ge",	"Germanium",	72.64], ["H",	"Hydrogen",	1.00794], ["He",	"Helium",	4.002602] ["Hf",	"Hafnium",	178.49] ["Hg",	"Mercury",	200.59], ["Ho",	"Holmium",	164.93032] ["I",	"Iodine",	126.90447], ["In",	"Indium",	114.818], ["Ir",	"Iridium",	192.217], ["K",	"Potassium",	39.0983"Kr",	"Krypton",	83.798
                      "La",	"Lanthanum",	138.90547
                      "Li",	"Lithium",	6.941
                      "Lu",	"Lutetium",	174.9668
