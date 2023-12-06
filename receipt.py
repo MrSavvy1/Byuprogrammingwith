@@ -24,10 +24,13 @@ Return: a compound dictionary that contains
                 
               
                 continue
-                count += 1
+                
   
               data[row[key_column_index]] = row
-            count += 1
+
+              
+            
+      
     return data
 
             
@@ -37,26 +40,52 @@ Return: a compound dictionary that contains
 
 def main():
     try:
+      current_date_and_time = datetime.now()
       num =0
       sub = 0
       product_dict = read_dictionary("products.csv", 0)
+      print(product_dict)
       print("Savvy Mall")
       with open("request.csv", 'r') as file:
           data = []
           reader = csv.reader(file)
           print("Your order list")
-          for row in reader:
-              data.append(row)
+          for index, row in enumerate (reader):
+            if index == 0:
+              continue
+            data.append(row)
               
           for dic in product_dict:
             for lis in data:
-              if dic == lis[0]:
+              
+            
+                
+              if lis[0]==product_dict[dic][0] :
+                
+                print()
                 pname = product_dict[dic][1]
+                
                 qty = lis[1]
                 price = product_dict[dic][2]
+                if current_date_and_time.strftime("%H:%m %a")== "11:00 a.m":
+
+                  price *= 0.1
                 num += int(qty) 
                 sub += int(qty ) * float(price)
                 print(f"{pname}: {qty}unit @ {price} per unit")
+                
+          # if any(data[0]) not in any(product_dict[dic][0]) :
+          # #   raise KeyError("Product not found")
+          uni = [inner_list[0] for inner_list in data]
+          # print(uni)
+          # for item in uni:
+          #   if item not in 
+          # if all(uni) in any(product_dict.keys()):
+          #   print("true")
+          # else:
+          #   print("false")
+          #if alloop
+          
           sales_t = sub * 0.06
           Total = sub + sales_t
           print("")
@@ -67,10 +96,10 @@ def main():
           print("")
           print(f"Total: ${Total}")
           print("Thank you for patronizing Savvy mall ")
-          current_date_and_time = datetime.now()
-          print(f"{current_date_and_time:%A %I:%M %p}")
+
+          print(f"{current_date_and_time:%A %b %d %I:%M:%S %p %Y}")
     except FileNotFoundError as file_err:
-      print("File not found.")
+      print(file_err)
     except KeyError as key_err:
       print(type(key_err).__name__, key_err)
     except Exception as err:
